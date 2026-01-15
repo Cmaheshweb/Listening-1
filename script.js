@@ -12,3 +12,25 @@ document.querySelectorAll('nav a').forEach(link => {
         showSection(section);
     });
 });
+document.getElementById("booking-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    // simple validation already done by HTML
+    const contact = document.getElementById("contact").value;
+
+    // WhatsApp link (+917028420075)
+    const whatsappNumber = "919999999999"; // 👉 इथे तुझा WhatsApp नंबर
+    const message = encodeURIComponent(
+        "Hi, I have booked a SafeTalk session. My contact: " + contact
+    );
+
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${message}`;
+
+    document.getElementById("whatsapp-link").href = whatsappURL;
+
+    // show success box
+    document.getElementById("success-box").style.display = "block";
+
+    // optional: scroll to success box
+    document.getElementById("success-box").scrollIntoView({ behavior: "smooth" });
+});
