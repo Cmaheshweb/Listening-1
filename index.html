@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SafeTalk – A Space to Be Heard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header with Navigation -->
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1>SafeTalk</h1>
+                <ul>
+                    <li><a href="#" data-section="home">Home</a></li>
+                    <li><a href="#" data-section="how-it-works">How It Works</a></li>
+                    <li><a href="#" data-section="rules-safety">Rules & Safety</a></li>
+                    <li><a href="#" data-section="book-session">Book a Session</a></li>
+                    <li><a href="#" data-section="contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content Sections -->
+    <main>
+        <!-- Home Page -->
+        <section id="home" class="page active">
+            <div class="container">
+                <h2>Feeling unheard? You’re not alone.</h2>
+                <p>A safe, respectful space to talk — without judgment.</p>
+                <div class="buttons">
+                    <button onclick="showSection('book-session')">Try 5-Minute Free Intro</button>
+                    <button onclick="showSection('book-session')">Book Paid Session (₹99 / 2 Hours)</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Page -->
+        <section id="how-it-works" class="page">
+            <div class="container">
+                <h2>How It Works</h2>
+                <ol>
+                    <li>Choose Free or Paid session</li>
+                    <li>Agree to rules</li>
+                    <li>Share contact (WhatsApp / Telegram)</li>
+                    <li>Get connected and talk</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Rules & Safety Page -->
+        <section id="rules-safety" class="page">
+            <div class="container">
+                <h2>Rules & Safety</h2>
+                <ul>
+                    <li>No sexual talk allowed</li>
+                    <li>No physical meetings</li>
+                    <li>No abuse, threats, or harassment</li>
+                    <li>This is NOT therapy or medical advice</li>
+                    <li>This is NOT dating or relationship service</li>
+                    <li>Session may be stopped if rules are broken</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Book a Session Page -->
+        <section id="book-session" class="page">
+            <div class="container">
+                <h2>Book a Session</h2>
+                <form id="booking-form">
+                    <label for="name">Name / Nickname:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="reason">Reason for talking:</label>
+                    <select id="reason" name="reason" required>
+                        <option value="">Select a reason</option>
+                        <option value="feeling-stressed">Feeling stressed</option>
+                        <option value="need-to-vent">Need to vent</option>
+                        <option value="personal-issues">Personal issues</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="session-type">Session type:</label>
+                    <select id="session-type" name="session-type" required>
+                        <option value="free">Free 5 min</option>
+                        <option value="paid">Paid ₹99 – 2 hours</option>
+                    </select>
+
+                    <label for="contact">WhatsApp or Telegram contact:</label>
+                    <input type="text" id="contact" name="contact" placeholder="e.g., +1234567890" required>
+
+                    <label>
+                        <input type="checkbox" id="agree" name="agree" required>
+                        I agree to rules
+                    </label>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page">
+            <div class="container">
+                <h2>Contact</h2>
+                <form id="contact-form">
+                    <label for="contact-name">Name:</label>
+                    <input type="text" id="contact-name" name="contact-name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+                <p>Email: info@safetalk.com</p>
+                <p>WhatsApp: +1-234-567-8900</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 SafeTalk. A space to be heard.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
