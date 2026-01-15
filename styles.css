@@ -101,3 +101,24 @@ button {
     margin-top: 16px;
     padding: 12px 20px;
 }
+.session-note {
+    margin: 15px 0 25px;
+    font-weight: normal;
+    color: #444;
+    line-height: 1.6;
+}
+
+.whatsapp-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 20px;
+    background-color: #25D366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ebe5d;
+}
