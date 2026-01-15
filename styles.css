@@ -55,3 +55,49 @@ footer {
     text-align: center;
     padding: 10px;
 }
+/* Better spacing & calm look */
+body {
+    line-height: 1.7;
+}
+
+section {
+    padding: 50px 20px;
+}
+
+h1, h2 {
+    margin-bottom: 25px;
+}
+
+p {
+    margin-bottom: 18px;
+}
+
+ul li, ol li {
+    margin-bottom: 14px;
+}
+
+/* Form improvements */
+form {
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+/* Buttons */
+button {
+    margin-top: 16px;
+    padding: 12px 20px;
+}
