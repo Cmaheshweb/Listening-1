@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <!-- Header with Navigation -->
     <header>
         <nav>
@@ -23,9 +24,10 @@
         </nav>
     </header>
 
-    <!-- Main Content Sections -->
+    <!-- Main Content -->
     <main>
-        <!-- Home Page -->
+
+        <!-- Home -->
         <section id="home" class="page active">
             <div class="container">
                 <h2>Feeling unheard? You’re not alone.</h2>
@@ -37,7 +39,7 @@
             </div>
         </section>
 
-        <!-- How It Works Page -->
+        <!-- How It Works -->
         <section id="how-it-works" class="page">
             <div class="container">
                 <h2>How It Works</h2>
@@ -50,7 +52,7 @@
             </div>
         </section>
 
-        <!-- Rules & Safety Page -->
+        <!-- Rules -->
         <section id="rules-safety" class="page">
             <div class="container">
                 <h2>Rules & Safety</h2>
@@ -65,62 +67,80 @@
             </div>
         </section>
 
-        <!-- Book a Session Page -->
+        <!-- Book a Session -->
         <section id="book-session" class="page">
             <div class="container">
                 <h2>Book a Session</h2>
+
+                <!-- 🌱 Emotional reassurance -->
+                <h3 class="session-note">
+                    You will be listened to here.<br>
+                    Your feelings will be respected.<br>
+                    You will be spoken to with care and understanding.
+                </h3>
+
                 <form id="booking-form">
-                    <label for="name">Name / Nickname:</label>
-                    <input type="text" id="name" name="name" required>
+                    <label>Name / Nickname:</label>
+                    <input type="text" required>
 
-                    <label for="reason">Reason for talking:</label>
-                    <select id="reason" name="reason" required>
+                    <label>Reason for talking:</label>
+                    <select required>
                         <option value="">Select a reason</option>
-                        <option value="feeling-stressed">Feeling stressed</option>
-                        <option value="need-to-vent">Need to vent</option>
-                        <option value="personal-issues">Personal issues</option>
-                        <option value="other">Other</option>
+                        <option>Feeling stressed</option>
+                        <option>Need to vent</option>
+                        <option>Personal issues</option>
+                        <option>Other</option>
                     </select>
 
-                    <label for="session-type">Session type:</label>
-                    <select id="session-type" name="session-type" required>
-                        <option value="free">Free 5 min</option>
-                        <option value="paid">Paid ₹99 – 2 hours</option>
+                    <label>Session type:</label>
+                    <select required>
+                        <option>Free 5 min</option>
+                        <option>Paid ₹99 – 2 hours</option>
                     </select>
 
-                    <label for="contact">WhatsApp or Telegram contact:</label>
-                    <input type="text" id="contact" name="contact" placeholder="e.g., +1234567890" required>
+                    <label>WhatsApp or Telegram contact:</label>
+                    <input type="text" placeholder="+91xxxxxxxxxx" required>
 
                     <label>
-                        <input type="checkbox" id="agree" name="agree" required>
-                        I agree to rules
+                        <input type="checkbox" required> I agree to rules
                     </label>
 
                     <button type="submit">Submit</button>
                 </form>
+
+                <!-- ✅ WhatsApp appears AFTER submit -->
+                <div id="success-box" style="display:none; margin-top:20px;">
+                    <p><strong>Your request has been received.</strong></p>
+                    <p>Please continue on WhatsApp.</p>
+
+                    <a id="whatsapp-link" class="whatsapp-btn" target="_blank">
+                        Continue on WhatsApp
+                    </a>
+                </div>
             </div>
         </section>
 
-        <!-- Contact Page -->
+        <!-- Contact -->
         <section id="contact" class="page">
             <div class="container">
                 <h2>Contact</h2>
-                <form id="contact-form">
-                    <label for="contact-name">Name:</label>
-                    <input type="text" id="contact-name" name="contact-name" required>
+                <form>
+                    <label>Name:</label>
+                    <input type="text" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <label>Email:</label>
+                    <input type="email" required>
 
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <label>Message:</label>
+                    <textarea rows="4" required></textarea>
 
                     <button type="submit">Send Message</button>
                 </form>
                 <p>Email: info@safetalk.com</p>
-                <p>WhatsApp: +1-234-567-8900</p>
+                <p>WhatsApp: Available after booking</p>
             </div>
         </section>
+
     </main>
 
     <!-- Footer -->
