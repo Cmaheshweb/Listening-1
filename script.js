@@ -19,7 +19,7 @@ document.getElementById("booking-form").addEventListener("submit", function (e) 
     const contact = document.getElementById("contact").value;
 
     // WhatsApp link (+917028420075)
-    const whatsappNumber = "919999999999"; // 👉 इथे तुझा WhatsApp नंबर
+    const whatsappNumber = "+917028420075"; // 👉 इथे तुझा WhatsApp नंबर
     const message = encodeURIComponent(
         "Hi, I have booked a SafeTalk session. My contact: " + contact
     );
