@@ -8,146 +8,137 @@
 </head>
 <body>
 
-    <!-- Header with Navigation -->
-    <header>
-        <nav>
-            <div class="nav-container">
-                <h1>SafeTalk</h1>
-                <ul>
-                    <li><a href="#" data-section="home">Home</a></li>
-                    <li><a href="#" data-section="how-it-works">How It Works</a></li>
-                    <li><a href="#" data-section="rules-safety">Rules & Safety</a></li>
-                    <li><a href="#" data-section="book-session">Book a Session</a></li>
-                    <li><a href="#" data-section="contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<header>
+    <nav>
+        <div class="nav-container">
+            <h1>SafeTalk</h1>
+            <ul>
+                <li><a href="#" data-section="home">Home</a></li>
+                <li><a href="#" data-section="how-it-works">How It Works</a></li>
+                <li><a href="#" data-section="rules-safety">Rules & Safety</a></li>
+                <li><a href="#" data-section="book-session">Book a Session</a></li>
+                <li><a href="#" data-section="contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
 
-    <!-- Main Content -->
-    <main>
+<main>
 
-        <!-- Home -->
-        <section id="home" class="page active">
-            <div class="container">
-                <h2>Feeling unheard? You’re not alone.</h2>
-                <p>A safe, respectful space to talk — without judgment.</p>
-                <div class="buttons">
-                    <button onclick="showSection('book-session')">Try 5-Minute Free Intro</button>
-                    <button onclick="showSection('book-session')">Book Paid Session (₹99 / 2 Hours)</button>
-                </div>
-            </div>
-        </section>
+<section id="home" class="page active">
+    <div class="container">
+        <h2>Feeling unheard? You’re not alone.</h2>
+        <p>A safe, respectful space to talk — without judgment.</p>
+        <div class="buttons">
+            <button onclick="showSection('book-session')">Try 5-Minute Free Intro</button>
+            <button onclick="showSection('book-session')">Book Paid Session (₹99 / 2 Hours)</button>
+        </div>
+    </div>
+</section>
 
-        <!-- How It Works -->
-        <section id="how-it-works" class="page">
-            <div class="container">
-                <h2>How It Works</h2>
-                <ol>
-                    <li>Choose Free or Paid session</li>
-                    <li>Agree to rules</li>
-                    <li>Share contact (WhatsApp / Telegram)</li>
-                    <li>Get connected and talk</li>
-                </ol>
-            </div>
-        </section>
+<section id="how-it-works" class="page">
+    <div class="container">
+        <h2>How It Works</h2>
+        <ol>
+            <li>Choose Free or Paid session</li>
+            <li>Agree to rules</li>
+            <li>Submit your details</li>
+            <li>Pay (for paid session)</li>
+            <li>Get connected on WhatsApp</li>
+        </ol>
+    </div>
+</section>
 
-        <!-- Rules -->
-        <section id="rules-safety" class="page">
-            <div class="container">
-                <h2>Rules & Safety</h2>
-                <ul>
-                    <li>No sexual talk allowed</li>
-                    <li>No physical meetings</li>
-                    <li>No abuse, threats, or harassment</li>
-                    <li>This is NOT therapy or medical advice</li>
-                    <li>This is NOT dating or relationship service</li>
-                    <li>Session may be stopped if rules are broken</li>
-                </ul>
-            </div>
-        </section>
+<section id="rules-safety" class="page">
+    <div class="container">
+        <h2>Rules & Safety</h2>
+        <ul>
+            <li>No sexual content</li>
+            <li>No physical meetings</li>
+            <li>No abuse or harassment</li>
+            <li>This is not therapy or medical advice</li>
+            <li>Session may stop if rules are broken</li>
+        </ul>
+    </div>
+</section>
 
-        <!-- Book a Session -->
-        <section id="book-session" class="page">
-            <div class="container">
-                <h2>Book a Session</h2>
+<section id="book-session" class="page">
+    <div class="container">
 
-                <!-- 🌱 Emotional reassurance -->
-                <h3 class="session-note">
-                    You will be listened to here.<br>
-                    Your feelings will be respected.<br>
-                    You will be spoken to with care and understanding.
-                </h3>
+        <h2>Book a Session</h2>
 
-                <form id="booking-form">
-                    <label>Name / Nickname:</label>
-                    <input type="text" required>
+        <h3 class="session-note">
+            You will be listened to here.<br>
+            Your feelings will be respected.<br>
+            And you will be spoken to with care.
+        </h3>
 
-                    <label>Reason for talking:</label>
-                    <select required>
-                        <option value="">Select a reason</option>
-                        <option>Feeling stressed</option>
-                        <option>Need to vent</option>
-                        <option>Personal issues</option>
-                        <option>Other</option>
-                    </select>
+        <form id="booking-form">
 
-                    <label>Session type:</label>
-                    <select required>
-                        <option>Free 5 min</option>
-                        <option>Paid ₹99 – 2 hours</option>
-                    </select>
+            <label>Name / Nickname</label>
+            <input type="text" id="name" required>
 
-                    <label>WhatsApp or Telegram contact:</label>
-                    <input type="text" placeholder="+91xxxxxxxxxx" required>
+            <label>Reason for talking</label>
+            <select id="reason" required>
+                <option value="">Select</option>
+                <option>Feeling stressed</option>
+                <option>Need to vent</option>
+                <option>Personal issues</option>
+                <option>Other</option>
+            </select>
 
-                    <label>
-                        <input type="checkbox" required> I agree to rules
-                    </label>
+            <label>Session Type</label>
+            <select id="session-type" required>
+                <option value="free">Free 5 minutes</option>
+                <option value="paid">Paid ₹99 – 2 Hours</option>
+            </select>
 
-                    <button type="submit">Submit</button>
-                </form>
+            <label>WhatsApp Number</label>
+            <input type="text" id="contact" placeholder="+91XXXXXXXXXX" required>
 
-                <!-- ✅ WhatsApp appears AFTER submit -->
-                <div id="success-box" style="display:none; margin-top:20px;">
-                    <p><strong>Your request has been received.</strong></p>
-                    <p>Please continue on WhatsApp.</p>
+            <label>
+                <input type="checkbox" required> I agree to the rules
+            </label>
 
-                    <a id="whatsapp-link" class="whatsapp-btn" target="_blank">
-                        Continue on WhatsApp
-                    </a>
-                </div>
-            </div>
-        </section>
+            <button type="submit">Submit</button>
+        </form>
 
-        <!-- Contact -->
-        <section id="contact" class="page">
-            <div class="container">
-                <h2>Contact</h2>
-                <form>
-                    <label>Name:</label>
-                    <input type="text" required>
+        <!-- SUCCESS -->
+        <div id="success-box" style="display:none; margin-top:20px;">
+            <p>✅ Booking received.</p>
+            <a id="whatsapp-link" class="pay-btn" target="_blank">
+                Continue on WhatsApp
+            </a>
+        </div>
 
-                    <label>Email:</label>
-                    <input type="email" required>
+        <!-- PAYMENT -->
+        <div id="payment-box" style="display:none; margin-top:20px;">
+            <h3>Complete Payment</h3>
+            <p>Amount: ₹99</p>
+            <a id="upi-pay-link" class="pay-btn">
+                Pay ₹99 via UPI
+            </a>
+            <p style="font-size:14px;">
+                After payment, send screenshot on WhatsApp.
+            </p>
+        </div>
 
-                    <label>Message:</label>
-                    <textarea rows="4" required></textarea>
+    </div>
+</section>
 
-                    <button type="submit">Send Message</button>
-                </form>
-                <p>Email: info@safetalk.com</p>
-                <p>WhatsApp: Available after booking</p>
-            </div>
-        </section>
+<section id="contact" class="page">
+    <div class="container">
+        <h2>Contact</h2>
+        <p>Email: info@safetalk.com</p>
+    </div>
+</section>
 
-    </main>
+</main>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2023 SafeTalk. A space to be heard.</p>
-    </footer>
+<footer>
+    <p>&copy; 2024 SafeTalk</p>
+</footer>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
