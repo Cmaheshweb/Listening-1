@@ -122,3 +122,33 @@ button {
 .whatsapp-btn:hover {
     background-color: #1ebe5d;
 }
+.action-btn {
+    display: block;
+    text-align: center;
+    padding: 14px 18px;
+    margin: 12px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+/* WhatsApp Button */
+.whatsapp-btn {
+    background-color: #25D366;
+}
+
+.whatsapp-btn:hover {
+    background-color: #1ebe5d;
+}
+
+/* UPI Button */
+.upi-btn {
+    background-color: #4f6df5;
+}
+
+.upi-btn:hover {
+    background-color: #3b55d9;
+}
